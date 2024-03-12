@@ -1,0 +1,83 @@
+:root{
+    --c_background: #B0305CFF;
+    --c_ground: rgb(125, 34, 66);
+    --c_two: #FFB6E4FF;
+}
+body{
+    background-color:var(--c_background);
+    color: white;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*#region Classe da esquerda*/
+.ramo-1 {
+    transform:scaleX(-1);
+    height: auto;
+
+    width: 18%;
+    float: left;
+}
+.ramo-1 > img{
+    width: 260px;
+    float: right;
+}
+/*endregion*/
+
+/*#region Classe principal*/
+.title{
+    margin-top: 20%;
+}
+.main h3{
+    margin-top: 20%;
+}
+#imgFrases img{
+    margin-top: 2%;
+    width: 50%;
+    height: auto;
+    border: 10px;
+}
+#buttonMain input{
+    
+    margin-bottom: 20%;
+    vertical-align: auto;
+    height: 100px;
+    width: 100px;
+    box-shadow: 6px 3px var(--c_ground);
+    border-radius: 10px ;
+    border-color: var(--c_ground);
+    background-image: url(img/icons-click.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--c_background);
+    color: white;  
+}
+.main {
+    height: auto;
+    width: 58%;
+    float: left;
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-bottom: 20%;
+}
+/*#endregion*/
+
+/*#region Classe da direita*/
+.ramo-2 {
+    height: auto;
+    width: 18%;
+    float: right;
+}
+.ramo-2 >img{
+    width: 260px;
+    float: right;
+}
+.end{
+    height: 150px;
+    width: 100%;
+    float: left;
+}
+/*#endregion*/

@@ -1,0 +1,99 @@
+
+
+/*#region petalas*/
+
+/*__________________Petala ramo 1 ______________________*/
+
+@keyframes petalaKey1a{
+    0%{transform: translateY(-300px); opacity: 100%;}
+    100%{transform: translateY(100px) translateX(-300px) rotate(-180deg); opacity: 0%;}
+}        
+@keyframes petalaKey1b{
+    from{transform: translateY(-400px) translateX(100px); opacity:100%;}
+    to{transform:translateY(100px) translateX(-50px) rotate(-180deg); 
+        opacity: 0%;}
+}
+@keyframes petalaKey1c{
+    0%{transform: translateY(-900px); opacity: 100%;}
+    100%{transform: translateY(100px) translateX(-300px) rotate(-180deg); opacity: 0%;}
+}
+.petala-1a{
+    content:url(img/petalas/petela-1.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1a 5s infinite;
+}
+.petala-1b{
+    content:url(img/petalas/petala-2.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1b 7s infinite;
+}
+.petala-1c{
+    content:url(img/petalas/petala-3.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1c 10s infinite;
+}
+
+/*__________________Petala ramo 2 ______________________*/
+
+.petala-2a{
+    content:url(img/petalas/petela-1.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1a 7s infinite;
+}
+.petala-2b{
+    content:url(img/petalas/petala-2.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1b 10s infinite;
+}
+.petala-2c{
+    content:url(img/petalas/petala-3.png);
+    display: block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    animation:petalaKey1c 5s infinite;
+}
+  
+/*#endregion*/
+
+/*#region tools*/
+@keyframes keya{
+    0% { transform: translateY(0);  }
+    50% { transform: translateY(-2px);}
+    100% { transform: translateY(0); }
+}
+
+.troll1 {
+    animation:keya 1s infinite;
+    content:url(img/trollface.png);
+    display:block;
+    height: auto;
+    width: 50px;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.troll1:hover{
+    animation:keya 0.1s infinite;
+    content:url(img/trollface2.png);
+    display:block;
+    height: auto;
+    width: 80px;
+    
+}
+/*#endregion*/
