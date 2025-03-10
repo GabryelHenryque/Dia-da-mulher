@@ -14,5 +14,6 @@ Criar uma experiência especial para o Dia Internacional da Mulher, onde sorteia
 ## Contexto
 Esse site foi criado com o intuito de colocar em pratica todo o meu primeiro conhecimento teorico que aprendi usando css e html.
 
-
+## Atualizações
+  ++ responsividade para celular e tablets
 
