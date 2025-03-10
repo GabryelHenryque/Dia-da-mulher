@@ -17,11 +17,11 @@ body{
 .ramo-1 {
     transform:scaleX(-1);
     height: auto;
-
-    width: 18%;
+    width: 0; /*18%*/
     float: left;
 }
 .ramo-1 > img{
+    display: none;
     width: 260px;
     float: right;
 }
@@ -29,20 +29,26 @@ body{
 
 /*#region Classe principal*/
 .title{
-    margin-top: 20%;
+    margin-top: 10%;
+    font-size: large;
 }
 .main h3{
     margin-top: 20%;
 }
+p {
+    font-size:large;
+    text-align:left;
+}
 #imgFrases img{
-    margin-top: 2%;
-    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
     height: auto;
     border: 10px;
 }
 #buttonMain input{
-    
     margin-bottom: 20%;
+    margin-top: 10%;
     vertical-align: auto;
     height: 100px;
     width: 100px;
@@ -57,27 +63,93 @@ body{
 }
 .main {
     height: auto;
-    width: 58%;
-    float: left;
-    margin-left: 39px;
-    margin-right: 39px;
+    margin-left: 10%;
+    margin-right: 10%; 
     margin-bottom: 20%;
+}
+
+h3{
+    font-size:25px;
 }
 /*#endregion*/
 
 /*#region Classe da direita*/
-.ramo-2 {
+h4{
+    font-size: 25px;
+}
+.ramo-2 {  
     height: auto;
-    width: 18%;
+    width: 0%; /*18*/
     float: right;
 }
 .ramo-2 >img{
+    display: none;
     width: 260px;
     float: right;
 }
 .end{
-    height: 150px;
+    height: 100px; /*150px*/
     width: 100%;
     float: left;
 }
+.troll1{
+    width: 4%;
+    padding-bottom: 20px;
+}
 /*#endregion*/
+
+
+/*tablet*/
+@media (min-width: 768px){
+    .title{
+        margin-top: 10%;
+        font-size: 32px;
+    }
+    p {
+        font-size:25px;
+        text-align:center;
+    }
+}
+
+/*pc*/
+@media (min-width: 1024px){
+    .title{
+        margin-top: 10%;
+        font-size: 32px;
+    }
+    p {
+        font-size:25px;
+        text-align:center;
+    }
+
+    .ramo-1 {
+        width: 18%;
+        float: left;
+    }
+    .ramo-1 > img{
+        display: block;
+    }
+    .main{
+        height: auto;
+        width: 44%;
+        float: left;
+        
+    }
+    #buttonMain input{
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    #imgFrases img{
+        width: 50%;
+    }
+    .ramo-2 {  
+        width: 18%;
+        float: right; 
+    }
+    .ramo-2 >img{
+        display: block;
+        float: right;
+    }
+}
+
