@@ -1,3 +1,5 @@
+// #region codigo antigo 
+/*
 console.log("ola mundo");
 
 // Pega o botão e faz algo ao clicar
@@ -28,9 +30,27 @@ function randonNumber(){
     document.getElementById("imgFrases").innerHTML = number;
     
 }
+*/
+//#endregion
 
 
-//formula
-//let numeroAleatorio = Math.floor(Math.random() * 100);
 
-//enviar imagem
+//#region codigo de 10/03/2025 --atulizado
+
+const buttonMain = document.getElementById('buttonMain');
+
+buttonMain.addEventListener('click', () =>{
+    const randon_array = [
+        "<img src='img/frases/frase-1.png'>",
+        "<img src='img/frases/frase-2.png'>",
+        "<img src='img/frases/frase-3.png'>"
+    ]
+    
+    const randon_value = Math.floor(Math.random() * randon_array.length)
+    document.getElementById("imgFrases").innerHTML = randon_array[randon_value];
+
+})
+
+
+
+//#endregion
