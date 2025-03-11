@@ -7,6 +7,7 @@ body{
     background-color:var(--c_background);
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -60,11 +61,12 @@ p {
     background-position: center;
     background-color: var(--c_background);
     color: white;  
+    cursor: pointer;
 }
 .main {
     height: auto;
-    margin-left: 10%;
-    margin-right: 10%; 
+    margin-left: 5%;
+    margin-right: 5%; 
     margin-bottom: 20%;
 }
 
@@ -78,8 +80,9 @@ h4{
     font-size: 25px;
 }
 .ramo-2 {  
+    display: none;
     height: auto;
-    width: 0%; /*18*/
+    width: 0; /*18*/
     float: right;
 }
 .ramo-2 >img{
@@ -92,8 +95,8 @@ h4{
     width: 100%;
     float: left;
 }
-.troll1{
-    width: 4%;
+.troll1 .troll1:hover{
+    width: 10%;
     padding-bottom: 20px;
 }
 /*#endregion*/
@@ -109,6 +112,7 @@ h4{
         font-size:25px;
         text-align:center;
     }
+
 }
 
 /*pc*/
@@ -133,7 +137,8 @@ h4{
         height: auto;
         width: 44%;
         float: left;
-        
+        margin-left: 10%;
+        margin-right: 10%; 
     }
     #buttonMain input{
         margin-top: 0%;
@@ -144,6 +149,7 @@ h4{
         width: 50%;
     }
     .ramo-2 {  
+        display: block;
         width: 18%;
         float: right; 
     }
@@ -151,7 +157,7 @@ h4{
         display: block;
         float: right;
     }
-    .troll1{
+    .troll1 .troll1:hover{
         width: 10%;
         padding-bottom: 20px;
     }
